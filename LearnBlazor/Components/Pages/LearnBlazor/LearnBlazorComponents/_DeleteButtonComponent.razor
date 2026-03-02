@@ -1,0 +1,21 @@
+﻿<input type="button" class="btn bg-danger" value="Delete - @ProductId"/>
+
+@ProductName
+
+@code {
+
+    [Parameter]
+    public int ProductId { get; set; }
+
+    [Parameter]
+    public string ProductName { get; set; }
+
+    // private void RemoveProduct(int id)
+    // {
+    //     var prod = ProductList.FirstOrDefault(r => r.Id == id);
+    //     if (prod != null)
+    //     {
+    //         ProductList.Remove(prod);
+    //     }
+    // }
+}
